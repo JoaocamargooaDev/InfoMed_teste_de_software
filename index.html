@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>exdex - Controle de Exames</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/img/icon.svg" type="image/x-icon">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS próprio -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= TELA LOGIN ================= -->
+<div class="container py-5" id="telaLogin">
+  <div class="row justify-content-center">
+    <div class="col-md-5">
+      <div class="card shadow p-4">
+        <div class="text-center mb-4">
+            <img src="/img/logo.png" alt="Logo EXDEX" class="logo-login">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">E-mail</label>
+          <input type="email" id="campoEmail" class="form-control form-control-lg">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Senha</label>
+          <input type="password" id="campoSenha" class="form-control form-control-lg">
+        </div>
+
+        <button class="btn btn-primary w-100" onclick="realizarLogin()">Entrar</button>
+
+        <div id="mensagemErroLogin" class="text-danger mt-3"></div>
+
+        <small class="d-block mt-3">
+          Usuário teste: teste@exdex.com | Senha: 123456
+        </small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= TELA SISTEMA ================= -->
+<div class="container py-4 d-none" id="telaSistema">
+
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>Meus Exames</h2>
+    <button class="btn btn-secondary" onclick="realizarLogout()">Sair</button>
+  </div>
+
+  <!-- Cadastro -->
+  <div class="card p-4 mb-4">
+    <h4>Cadastrar Exame</h4>
+
+    <div class="row g-3">
+      <div class="col-md-4">
+        <input type="text" id="campoNome" class="form-control"
+          placeholder="Nome do exame (obrigatório)">
+      </div>
+
+      <div class="col-md-3">
+        <input type="date" id="campoData" class="form-control">
+      </div>
+
+      <div class="col-md-3">
+        <input type="text" id="campoTipo" class="form-control"
+          placeholder="Tipo (opcional)">
+      </div>
+
+      <div class="col-md-12">
+        <textarea id="campoObservacoes" class="form-control"
+          placeholder="Observações (opcional)"></textarea>
+      </div>
+
+      <div class="col-md-3">
+        <button class="btn btn-success w-100"
+          onclick="cadastrarExame()">
+          Salvar Exame
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lista -->
+  <div class="card p-4">
+    <h4>Lista de Exames</h4>
+    <div id="listaExames"></div>
+  </div>
+
+</div>
+
+<!-- JS próprio -->
+<script src="/scripts/script.js"></script>
+
+</body>
+</html>

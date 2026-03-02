@@ -1,0 +1,44 @@
+body {
+  background-color: #f2f4f7;
+  font-size: 18px; 
+}
+
+.card {
+  border-radius: 20px;
+}
+
+.btn {
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+
+.form-control {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.status-pendente {
+  color: #d9534f; 
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.status-realizado {
+  color: #198754; 
+  font-weight: bold;
+  font-size: 18px;
+}
+
+h1, h2, h4 {
+  font-weight: bold;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus, textarea:focus {
+  border: 2px solid #0d6efd;
+  box-shadow: none;
+}
