@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.11.9 on win32)" generated="2026-05-25T08:53:04.887336" rpa="false" schemaversion="5">
+<suite id="s1" name="Login2" source="C:\Users\jvjoa\Documents\infomed-teste\web-tests\login2.robot">
+<test id="s1-t1" name="CT02 Login inválido" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-25T08:53:05.094379" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-25T08:53:05.094379" elapsed="22.586314"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-25T08:53:27.681691" elapsed="0.027520"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-25T08:53:27.711028" level="INFO">Typing text 'usuario_errado' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>usuario_errado</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-25T08:53:27.709211" elapsed="0.120478"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-05-25T08:53:27.829689" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2026-05-25T08:53:27.862355" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=password</arg>
+<arg>senha_errada</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-25T08:53:27.829689" elapsed="0.088733"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-05-25T08:53:27.919420" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-25T08:53:27.919420" elapsed="0.079700"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-05-25T08:53:28.011288" level="INFO">Current page contains text 'Epic sadface'.</msg>
+<arg>Epic sadface</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-05-25T08:53:27.999120" elapsed="0.012168"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-25T08:53:30.013012" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-25T08:53:28.012422" elapsed="2.000590"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-05-25T08:53:30.013012" elapsed="2.191432"/>
+</kw>
+<status status="PASS" start="2026-05-25T08:53:05.093398" elapsed="27.112046"/>
+</test>
+<status status="PASS" start="2026-05-25T08:53:04.889225" elapsed="27.316219"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login2" id="s1" pass="1" fail="0" skip="0">Login2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
